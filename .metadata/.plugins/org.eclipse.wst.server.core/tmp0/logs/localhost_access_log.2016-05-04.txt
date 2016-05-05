@@ -1,0 +1,16 @@
+127.0.0.1 - - [04/May/2016:23:53:46 -0300] "GET / HTTP/1.1" 404 994
+127.0.0.1 - - [04/May/2016:23:53:50 -0300] "GET /MoldeProjetos1/faces/paginas/usuario/cadastroUsuario.xhtml HTTP/1.1" 200 12552
+127.0.0.1 - - [04/May/2016:23:53:50 -0300] "GET /MoldeProjetos1/faces/paginas/usuario/RES_NOT_FOUND HTTP/1.1" 404 1082
+127.0.0.1 - - [04/May/2016:23:53:50 -0300] "GET /MoldeProjetos1/faces/javax.faces.resource/primefaces.js;jsessionid=7D04045167F113BDAAF3BAC0E73420C1?ln=primefaces&v=5.1 HTTP/1.1" 200 313177
+127.0.0.1 - - [04/May/2016:23:53:50 -0300] "GET /MoldeProjetos1/faces/javax.faces.resource/jquery/jquery.js;jsessionid=7D04045167F113BDAAF3BAC0E73420C1?ln=primefaces&v=5.1 HTTP/1.1" 200 108195
+127.0.0.1 - - [04/May/2016:23:53:50 -0300] "GET /MoldeProjetos1/faces/javax.faces.resource/jquery/jquery-plugins.js;jsessionid=7D04045167F113BDAAF3BAC0E73420C1?ln=primefaces&v=5.1 HTTP/1.1" 200 236815
+127.0.0.1 - - [04/May/2016:23:53:50 -0300] "GET /MoldeProjetos1/resources/img/Banner%20Arquitetura%20JAVA%20EE.jpg;jsessionid=7D04045167F113BDAAF3BAC0E73420C1 HTTP/1.1" 200 41496
+127.0.0.1 - - [04/May/2016:23:53:50 -0300] "GET /MoldeProjetos1/resources/img/rodape%20DUT.jpg;jsessionid=7D04045167F113BDAAF3BAC0E73420C1 HTTP/1.1" 200 48226
+127.0.0.1 - - [04/May/2016:23:53:50 -0300] "GET /MoldeProjetos1/faces/javax.faces.resource/jsf.js?ln=javax.faces HTTP/1.1" 200 42080
+127.0.0.1 - - [04/May/2016:23:53:50 -0300] "GET /MoldeProjetos1/faces/javax.faces.resource/primefaces.css;jsessionid=7D04045167F113BDAAF3BAC0E73420C1?ln=primefaces&v=5.1 HTTP/1.1" 200 58821
+127.0.0.1 - - [04/May/2016:23:53:50 -0300] "GET /MoldeProjetos1/faces/javax.faces.resource/theme.css?ln=primefaces-aristo HTTP/1.1" 200 29266
+127.0.0.1 - - [04/May/2016:23:57:57 -0300] "GET / HTTP/1.1" 404 994
+127.0.0.1 - - [04/May/2016:23:57:58 -0300] "GET /MoldeProjetos1/faces/paginas/usuario/cadastroUsuario.xhtml HTTP/1.1" 200 8887
+127.0.0.1 - - [04/May/2016:23:57:58 -0300] "GET /MoldeProjetos1/resources/img/rodape%20DUT.jpg HTTP/1.1" 200 48226
+127.0.0.1 - - [04/May/2016:23:57:58 -0300] "GET /MoldeProjetos1/resources/img/Banner%20Arquitetura%20JAVA%20EE.jpg HTTP/1.1" 200 41496
+127.0.0.1 - - [04/May/2016:23:57:58 -0300] "GET /MoldeProjetos1/faces/paginas/usuario/RES_NOT_FOUND HTTP/1.1" 404 1082

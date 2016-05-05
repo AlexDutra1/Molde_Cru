@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/templates/layout.xhtml">
+
+	<!-- DEFINE É USADO PARA COLOCAR O CODIGO QUE É DIFERENTE DO TEMPLATE -->
+	<ui:define name="corpo">
+
+		<!-- FORM NECESSARIO -->
+		<form id="formPesquisaCliente">
+
+			<!-- PAINEL GERAL -->
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 style="font-family: Impact; font-weight: bold">Pesquisa de Clientes</h3>
+				</div>
+			<div class="panel-body">
+
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4>Filtrar</h4>
+				</div>
+			<div class="panel-body">
+			
+			
+			<!-- PESQUISA POR NOME -->
+			<div class="col-md-11 form-group">
+				<label>Nome</label><br></br>
+				<label>Input</label>
+			</div>
+			 
+			<!-- PESQUISA POR EMAIL -->
+			<div class="col-md-11 form-group">
+				<label>Email</label><br></br>
+				<label>Input</label>
+			</div>
+			
+			<!-- PESQUISA POR DATA DE NASCIMENTO -->
+			<div class="col-md-11 form-group">
+				<label>Data de nascimento</label>
+			</div>
+			
+			<div class="col-md-11 form-group">
+				<label>Calendario para escolha da data</label><br></br>
+			</div>
+			
+			<!-- PESQUISA POR GENERO -->
+			
+			<div class="col-md-10 form-group">
+				<label>Genero</label><br></br>
+				<label>RadioButton- MASCULINO-FEMININO</label>
+			</div>
+
+			<!-- PESQUISA POR RENDA MENSAL -->
+			<div class="col-md-11 form-group">
+				<label>Renda Mensal</label><br></br>
+				<label>Input</label>
+			</div>
+
+			<!-- PESQUISA POR LAGRADOURO -->
+			<div class="col-md-11 form-group">
+				<label>Endereco-Lagradouro</label><br></br>
+				<label>Input</label>
+			</div>
+		 	
+		 	<!-- PESQUISA POR ESTADO -->
+			<div class="col-md-11 form-group">
+				<label>Endereco-Estado</label><br></br>
+				<label>Combobox</label>
+			</div>
+		 	
+			<div class="col-md-11 form-group">
+				<label>Endereco-Municipio</label><br></br>
+				<label>Combobox</label>
+			</div>
+			
+			<div class="col-md-11 form-group">
+				<label>Telefone-Numero</label><br></br>
+				<label>Input</label>
+			</div>
+			
+			<div class="col-md-10 form-group">
+				<button>Pesquisar</button>
+			</div>
+			
+			</div><!-- FINAL DO CORPO DO PAINEL -->
+			</div><!-- FINAL DO PAINEL -->
+
+			<!-- TABELA -->
+				<label>Tabela de clientes</label>
+				
+			</div> <!-- FINAL DO CORPO DO PAINEL -->
+		</div><!-- FINAL DO PAINEL GERAL -->
+
+		</form>
+
+	</ui:define>
+
+</ui:composition>
+</html>

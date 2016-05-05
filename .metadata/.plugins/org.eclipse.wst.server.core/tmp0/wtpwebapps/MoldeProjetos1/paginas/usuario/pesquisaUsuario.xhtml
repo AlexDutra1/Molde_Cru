@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/templates/layout.xhtml">
+<!-- DEFINE É USADO PARA COLOCAR O CODIGO QUE É DIFERENTE DO TEMPLATE -->
+	<ui:define name="corpo">
+	<form id="formPesquisaUsuario">
+
+<!-- Teste do painel bootstrap -->
+	<div class="panel panel-default">
+		<div class="panel-heading"><h3>Pesquisa de Usuários</h3></div>
+		
+		<div class="panel-body">
+		
+		<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4>Filtrar</h4>
+				</div>
+			<div class="panel-body">
+		
+				<div class="row">
+
+					<div class="col-md-10 form-group">
+						<label>nome</label><br></br>
+						<label>input</label>
+					</div>
+					
+					<div class="col-md-10 form-group">
+						<label>login / usuario</label><br></br>
+						<label>input</label>
+					</div>
+					 
+					<div class="col-md-10 form-group">
+						<label>email</label><br></br>
+						<label>input</label>
+					</div>
+				
+					<div class="col-md-10 form-group">
+						<label>Botao Pesquisar</label>
+					</div>
+					
+					</div> <!-- FINAL DA ROW -->
+				</div> <!-- FIM DO CORPO DO PAINEL -->
+			</div> <!-- FIM DO PAINEL -->
+
+			<div class="row">
+					<!-- TABELA -->
+					<div class="col-md-12 form-group">
+						<label>TABELA</label>
+					</div>
+			</div><!-- FINAL DA ROW -->
+			
+				
+		</div> <!-- FINAL DO CORPO DO PAINEL -->
+	</div> <!-- FINAL DO PAINEL -->
+	
+	</form>
+	</ui:define>
+</ui:composition>
+</html>

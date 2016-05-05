@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:andii="http://componentes.customizados.com"
+      xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/templates/layout.xhtml">
+
+<!-- DEFINE É USADO PARA COLOCAR O CODIGO QUE É DIFERENTE DO TEMPLATE -->
+	<ui:define name="corpo">
+
+<!-- FORM NECESSARIO -->
+<form id="formCadastroMunicipio">
+
+		<!--PAINEL GERAL -->
+		<andii:compPanel >
+		
+			<ui:define name="tituloDoPainel"><h3>Cadastro de Cidade</h3></ui:define>
+		
+		<ui:define name="corpoDoPainel">
+		
+			<div class="col-md-8 form-group">
+					<label>Nome do municipio</label><br></br>
+					<label>input</label>
+			</div>
+		
+			<div class="col-md-5 form-group">
+						<label>Estado</label><br></br>
+						<label>Combobox</label>
+			</div>
+		
+			<div class="col-md-12 form-group">
+				<label>Botao Cadastrar Municipio</label>
+			</div>
+		
+		</ui:define>
+		</andii:compPanel>
+		
+</form>
+</ui:define>
+</ui:composition>
+</html>
