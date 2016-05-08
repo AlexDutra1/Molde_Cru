@@ -12,7 +12,7 @@
 	<ui:define name="corpo">
 
 <!-- FORM NECESSARIO -->
-<h:form>
+<form>
 
 <!--Teste do painel bootstrap -->
 	<div class="panel panel-default">
@@ -20,73 +20,58 @@
 		
 		<div class="panel-body">
 
-		<h:inputHidden value="#{clienteController.formulario.cliente.idCliente}"></h:inputHidden>
-		
 	<div class="col-md-11 form-group">
-				<p:outputLabel value="Nome"></p:outputLabel>
-				<p:inputText styleClass="form-control"
-				value="#{clienteController.formulario.cliente.nome}"></p:inputText>
+				<label>Nome</label><br></br>
+				<label>Input</label>
 			</div>
 			
 			<div class="col-md-12 form-group">
-				<p:outputLabel value="Data de Nascimento"></p:outputLabel>
+				<label>Data de Nascimento</label>
 			</div>
 			
 			<div class="col-md-12 form-group">
-				<p:calendar showOn="button" id="txtDataNascimento" 
-					mask="99/99/9999" locale="pt" pattern="dd/MM/yyyy"
-					value="#{clienteController.formulario.cliente.dataNascimento}">
-				</p:calendar>
+				<label>Calendario</label>
 			</div>
 			
 	<!-- Necessario row para voltar a esquerda o telefone -->		
 	<div class="row">
 		<div class="col-md-12 form-group">	
 			<div class="col-md-2 form-group">
-				<p:outputLabel value="DDD "></p:outputLabel>
-				<p:inputText styleClass="form-control"
-				value="#{clienteController.formulario.telefone.ddd}"
-				></p:inputText>
+				<label>DDD</label><br></br>
+				<label>Input</label>
 			</div>
 			<div class="col-md-4 form-group">
-				<p:outputLabel value="Telefone"></p:outputLabel>
-				<p:inputText styleClass="form-control"
-				value="#{clienteController.formulario.telefone.numero}"
-				></p:inputText>
+				<label>Numero</label><br></br>
+				<label>Input</label>
 			</div>
 		</div>
 	</div>
 			
 			<div class="col-md-6 form-group">
-				<p:outputLabel value="Email "></p:outputLabel>
-				<p:inputText styleClass="form-control"
-				value="#{clienteController.formulario.cliente.email}"></p:inputText>
+				<label>Email</label><br></br>
+				<label>Input</label>
 			</div>
 			
 			
 			<div class="col-md-7 form-group">
-				<p:outputLabel value="Renda Mensal"></p:outputLabel>
-				<p:inputText styleClass="form-control"
-				value="#{clienteController.formulario.cliente.rendaMensal}"></p:inputText>
+				<label>Renda Mensal</label><br></br>
+				<label>Input</label>
 			</div>
 
 			<div class="col-md-10 form-group">
-				<h:outputLabel value="Género" />
-				<h:selectOneRadio value="#{clienteController.formulario.cliente.genero}">
-				   	<f:selectItem itemValue="MASCULINO" itemLabel="MASCULINO" />
-				   	<f:selectItem itemValue="FEMININO" itemLabel="FEMININO" />
-				</h:selectOneRadio>
+				<label>Genero</label><br></br>
+				<label>ComboBox</label>
 			</div>
 
 			<div class="col-md-12 form-group">
-				<p:commandButton value="Salvar" action="#{clienteController.acaoAposCadastrar}"></p:commandButton>
+				<button>Salvar</button>
 			</div>
 
 
 </div> <!-- FINAL DO CORPO DO PAINEL -->
 	</div> <!-- FINAL DO PAINEL -->
 	
-</h:form>	
+</form>	
 	</ui:define>
 </ui:composition>
 

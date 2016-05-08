@@ -11,7 +11,7 @@
 	<ui:define name="corpo">
 
 <!-- FORM NECESSARIO -->
-<h:form>
+<form>
 
 <div class="panel panel-default">
 		<div class="panel-heading"><h4>Exibição de Interesses</h4></div>
@@ -25,23 +25,14 @@
 				</div>
 				
 				<div class="col-md-3 form-group">	
-					<p:dataTable value="#{clienteController.formulario.listaInteresses}"
-						var="interesse" id="tabelaInteresses">
-						
-						<p:column headerText="Interesses" style="text-align: center;">
-								<h:outputText value="#{interesse.nome}"></h:outputText>
-						</p:column>
-						
-					</p:dataTable>			
+					<label>tabela com interesses</label>		
 				</div>
 			<!-- FIM DA TABELA -->
-			
-
 			
 		</div> <!-- FINAL DO CORPO DO PAINEL -->
 		</div> <!-- FINAL DO PAINEL -->
 	
-</h:form>	
+</form>	
 	</ui:define>
 </ui:composition>
 

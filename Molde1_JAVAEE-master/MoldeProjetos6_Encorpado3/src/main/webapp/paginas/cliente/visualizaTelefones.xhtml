@@ -12,7 +12,7 @@
 	<ui:define name="corpo">
 
 		<!-- FORM NECESSARIO -->
-		<h:form id="formCadastroEndereco">
+		<form id="formCadastroEndereco">
 
 			<!--PAINEL GERAL -->
 			<andii:compPanel>
@@ -23,22 +23,14 @@
 		
 		<div class="col-md-3 form-group">		
 			<!-- TABELA PARA TELEFONE -->
-				<p:dataTable value="#{clienteController.formulario.listaTelefones}"
-					var="telefone" id="tabelaTelefones">
-					
-					<p:column headerText="Números" style="text-align: center;">
-							<h:outputText value="(#{telefone.ddd}) "></h:outputText>
-							<h:outputText value="#{telefone.numero}"></h:outputText>
-					</p:column>
-					
-				</p:dataTable>			
+				<label>tabela com telefones</label>		
 			<!-- FIM DA TABELA -->
 		</div>
 			
 				</ui:define>
 		</andii:compPanel>
 			
-</h:form>
+</form>
 </ui:define>
 </ui:composition>
 </html>

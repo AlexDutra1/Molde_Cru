@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:andii="http://componentes.customizados.com"
@@ -12,7 +11,7 @@
 	<ui:define name="corpo">
 
 		<!-- FORM NECESSARIO -->
-		<h:form id="formCadastroEndereco">
+		<form id="formCadastroEndereco">
 
 			<!--PAINEL GERAL -->
 			<andii:compPanel>
@@ -22,75 +21,48 @@
 				<ui:define name="corpoDoPainel">
 
 				<div class="col-md-12 form-group">
-					<p:outputLabel value="Lagradouro"></p:outputLabel>
-					<br></br>
-					<p:inputText styleClass="form-control"
-						value="#{enderecoController.formulario.endereco.lagradouro}"></p:inputText>
-					<br></br>
-					</div>
+					<label>Lagradouro</label><br></br>
+					<label>Input</label>
+				</div>
 
 				<div class="col-md-2 form-group">
-					<p:outputLabel value="Quadra"></p:outputLabel>
-					<br></br>
-					<p:inputText styleClass="form-control"
-						value="#{enderecoController.formulario.endereco.quadra}"></p:inputText>
+					<label>Quadra</label><br></br>
+					<label>Input</label>
 				</div>
 				
 				<div class="col-md-2 form-group">
-						<p:outputLabel value="Lote "></p:outputLabel>
-						<p:inputText styleClass="form-control"
-						value="#{enderecoController.formulario.endereco.lote}"></p:inputText>
+					<label>Lote</label><br></br>
+					<label>Input</label>
 				</div>
 				
 				
 				<div class="col-md-2 form-group">
-						<p:outputLabel value="Número "></p:outputLabel>
-						<p:inputText styleClass="form-control"
-						value="#{enderecoController.formulario.endereco.numero}"></p:inputText>
+						<label>Numero</label><br></br>
+						<label>Input</label>
 				</div>
 				
 				<div class="col-md-4 form-group">
-						<p:outputLabel value="CEP "></p:outputLabel>
-						<p:inputText styleClass="form-control"
-						value="#{enderecoController.formulario.endereco.cep}"></p:inputText>
+						<label>CEP</label><br></br>
+						<label>Input</label>
 				</div>
 				
 				<div class="col-md-8 form-group">
-						<p:outputLabel value="Bairro "></p:outputLabel>
-						<p:inputText styleClass="form-control"
-						value="#{enderecoController.formulario.endereco.bairro}"></p:inputText>
+						<label>Bairro</label><br></br>
+						<label>Input</label>
 				</div>
 							
 				<div class="col-md-6 form-group">
-					<h:outputLabel value="Estado" for="estado" />
-						<h:selectOneMenu id="estado" styleClass="form-control"
-						value="#{enderecoController.formulario.estadoSelecionado}"
-						converter="SimpleEntityConverter">
-						   <f:selectItem itemValue="" itemLabel="Selecione" />
-						   <f:selectItems value="#{enderecoController.formulario.todosEstados}" var="estado" itemValue="#{estado}" itemLabel="#{estado.nome}"></f:selectItems>
-						
-						<f:ajax event="change" render="municipio_combo_endereco" listener="#{enderecoController.atualizaComboMunicipio}"></f:ajax>
-						
-						</h:selectOneMenu>	
+					<label>Estado</label><br></br>
+					<label>ComboBox</label>
 				</div>
 
 				<div class="col-md-6 form-group">
-					<h:outputLabel value="Municipio" for="municipio_combo_endereco" />
-						<h:selectOneMenu id="municipio_combo_endereco" styleClass="form-control"
-						value="#{enderecoController.formulario.municipioSelecionado}"
-						converter="SimpleEntityConverter">
-						   <f:selectItem itemValue="" itemLabel="Selecione" />
-						   <f:selectItems value="#{enderecoController.formulario.todosMunicipios}"
-						   var="municipio" 
-						   itemValue="#{municipio}"
-						   itemLabel="#{municipio.nome}"></f:selectItems>
-						</h:selectOneMenu>	
+					<label>Municipio</label><br></br>
+					<label>ComboBox</label>
 				</div>
 				
 				<div class="col-md-12 form-group">
-					<p:commandButton value="Cadastrar"
-					update="formCadastroEndereco"
-					actionListener="#{enderecoController.acaoAposCadastrar}"/>
+					<button>Cadastrar</button>
 				</div>
 				
 				</ui:define>
@@ -98,7 +70,7 @@
 			</andii:compPanel>
 			<!-- FIM DO PAINEL GERAL-->
 
-		</h:form>
+		</form>
 
 	</ui:define>
 	<!-- FIM DO CORPO DA PAGINA -->

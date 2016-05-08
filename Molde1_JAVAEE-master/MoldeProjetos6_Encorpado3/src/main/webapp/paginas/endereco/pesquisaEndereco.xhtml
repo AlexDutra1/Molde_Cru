@@ -13,7 +13,7 @@
 	<ui:define name="corpo">
 
 		<!-- FORM NECESSARIO -->
-		<h:form id="formPesquisaEndereco">
+		<form id="formPesquisaEndereco">
 
 			<!--PAINEL GERAL -->
 			<andii:compPanel>
@@ -33,30 +33,26 @@
 				<!-- PRIMEIRA LINHA -->
 				<div class="row">
 					<div class="col-md-8 form-group">
-						<p:outputLabel value="Lagradouro"></p:outputLabel>
-						<p:inputText styleClass="form-control"
-						value="#{enderecoController.formulario.endereco.lagradouro}"></p:inputText>
+						<label>Lagradouro</label><br></br>
+						<label>Input</label>
 					</div>
 				</div>
 				
 				<!-- SEGUNDA LINHA -->
 				<div class="row">
 					<div class="col-md-2 form-group">
-								<p:outputLabel value="Quadra"></p:outputLabel>
-								<p:inputText styleClass="form-control"
-								value="#{enderecoController.formulario.endereco.quadra}"></p:inputText>
+							<label>Quadra</label><br></br>
+							<label>Input</label>
 					</div>
 					
 					<div class="col-md-2 form-group">
-							<p:outputLabel value="Lote "></p:outputLabel>
-							<p:inputText styleClass="form-control"
-							value="#{enderecoController.formulario.endereco.lote}"></p:inputText>
+							<label>Lote</label><br></br>
+							<label>Input</label>
 					</div>
 					
 					<div class="col-md-2 form-group">
-							<p:outputLabel value="Número "></p:outputLabel>
-							<p:inputText styleClass="form-control"
-							value="#{enderecoController.formulario.endereco.numero}"></p:inputText>
+							<label>Numero</label><br></br>
+							<label>Input</label>
 					</div>
 					
 				</div>
@@ -64,51 +60,35 @@
 				<!-- TERCEIRA LINHA -->
 				<div class="row">
 					<div class="col-md-8 form-group">
-							<p:outputLabel value="Bairro "></p:outputLabel>
-							<p:inputText styleClass="form-control"
-							value="#{enderecoController.formulario.endereco.bairro}"></p:inputText>
+							<label>Bairro</label><br></br>
+							<label>Input</label>
 					</div>
 				</div>
 				
 				<div class="row">
 					<div class="col-md-4 form-group">
-								<p:outputLabel value="CEP "></p:outputLabel>
-								<p:inputText styleClass="form-control"
-								value="#{enderecoController.formulario.endereco.cep}"></p:inputText>
+								<label>CEP</label><br></br>
+								<label>Input</label>
 					</div>
 				</div>
 				
 				<!-- QUARTA LINHA -->
 				<div class="row">
 					<div class="col-md-4 form-group">
-						<h:outputLabel value="Estado" for="estado" />
-							<h:selectOneMenu id="estado" styleClass="form-control"
-							value="#{enderecoController.formulario.estadoSelecionado}"
-							converter="SimpleEntityConverter">
-							   <f:selectItem itemValue="" itemLabel="Selecione" />
-							   <f:selectItems value="#{enderecoController.formulario.todosEstados}" var="estado" itemValue="#{estado}" itemLabel="#{estado.nome}"></f:selectItems>
-							</h:selectOneMenu>	
+						<label>Estado</label><br></br>
+						<label>Combobox estado</label>
 					</div>
 					
 					<div class="col-md-4 form-group">
-						<h:outputLabel value="Municipio" for="municipio_combo_endereco" />
-							<h:selectOneMenu id="municipio_combo_endereco" styleClass="form-control"
-							value="#{enderecoController.formulario.municipioSelecionado}"
-							converter="SimpleEntityConverter">
-							   <f:selectItem itemValue="" itemLabel="Selecione" />
-							   <f:selectItems value="#{enderecoController.formulario.todosMunicipios}"
-							   var="municipio" 
-							   itemValue="#{municipio}"
-							   itemLabel="#{municipio.nome}"></f:selectItems>
-							</h:selectOneMenu>	
+						<label>Municipio</label><br></br>
+						<label>Combobox municipio</label>
 					</div>
 				</div>
 				
 				<!-- QUINTA LINHA -->
 				<div class="row">
 					<div class="col-md-10 form-group">
-							<p:commandButton value="Pesquisar"
-							action="#{enderecoController.pesquisar}"></p:commandButton>
+						<button>Pesquisar</button>
 					</div>
 				</div>
 				
@@ -120,52 +100,13 @@
 				<!-- SEXTA LINHA -->
 				<div class="row">
 					<div class="col-md-12 form-group">
-						<p:dataTable value="#{enderecoController.formulario.todosEnderecos}"
-						var="endereco" id="tabelaEnderecos">
-						
-					<p:column headerText="LAGRADOURO" style="text-align: center;">
-						<h:outputText value="#{endereco.lagradouro}"></h:outputText>
-					</p:column>
-					
-					<p:column headerText="QUADRA" style="text-align: center;">
-						<h:outputText value="#{endereco.quadra}"></h:outputText>
-					</p:column>
-					
-					<p:column headerText="LOTE" style="text-align: center;">
-						<h:outputText value="#{endereco.lote}"></h:outputText>
-					</p:column>
-					
-					<p:column headerText="NÚMERO" style="text-align: center;">
-						<h:outputText value="#{endereco.numero}"></h:outputText>
-					</p:column>
-					
-					<p:column headerText="CEP" style="text-align: center;">
-						<h:outputText value="#{endereco.cep}"></h:outputText>
-					</p:column>
-					
-					<p:column headerText="BAIRRO" style="text-align: center;">
-						<h:outputText value="#{endereco.bairro}"></h:outputText>
-					</p:column>
-					
-					<p:column headerText="ESTADO" style="text-align: center;">
-						<h:outputText value="#{endereco.estado.nome}"></h:outputText>
-					</p:column>
-					
-					<p:column headerText="MUNICIPIO" style="text-align: center;">
-						<h:outputText value="#{endereco.municipio.nome}"></h:outputText>
-					</p:column>
-					
-					<p:column headerText="AÇÕES" style="text-align: center;">
-						<h:outputText value="ICONE"></h:outputText>
-					</p:column>
-						
-						</p:dataTable>
+						<label>tabela endereços</label>						
 					</div>
 				</div>
 				
 				</ui:define>
 				</andii:compPanel>
-			</h:form>	
+			</form>	
 </ui:define>
 </ui:composition>
 </html>
